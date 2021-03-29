@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <div>t1</div>
     <div>t2</div>
+    <div>t3</div>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
