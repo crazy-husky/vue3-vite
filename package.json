@@ -6,7 +6,18 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lint-fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix"
+    "lint-fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "lint-staged": "lint-staged" 
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged" 
+    }
+  },
+  "lint-staged": {
+    "**/*.js": "eslint --ext .js",  
+    "**/*.vue": "eslint --ext .vue",  
+    "src/**/*.scss": "stylelint --syntax scss && stylelint --fix scss"  
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -25,15 +36,6 @@
     "eslint-plugin-vue": "^7.0.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged"
-    }
-  },
-  "lint-staged": {
-    "**/*.js": "eslint --ext .js",
-    "**/*.vue": "eslint --ext .vue"
   },
   "browserslist": [
     "> 1%",

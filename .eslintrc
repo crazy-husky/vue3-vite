@@ -1,5 +1,4 @@
-// .eslintrc.js 
-module.exports = {
+ {
     "root": true,
     "env": {
       "node": true
@@ -12,4 +11,4 @@ module.exports = {
       "parser": "babel-eslint"
     },
     "rules": {}
-};
+}
