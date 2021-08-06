@@ -93,7 +93,8 @@
 export default {
   name: "HelloWorld",
   props: {
-    msg: String,;
+    msg: String,
+    age:11,;
   },
 };
 </script>

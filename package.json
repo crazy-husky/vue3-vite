@@ -46,7 +46,11 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "src/**/*.{js,vue}": [
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add"
+    ]
   },
   "browserslist": [
     "> 1%",
