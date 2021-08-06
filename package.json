@@ -28,15 +28,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint-staged"
     }
   },
   "lint-staged": {
-    "src/**/*.{js,vue}": [
-      "prettier --write",
-      "eslint --cache --fix",
-      "git add"
-    ]
+    "**/*.js": "eslint --ext .js",
+    "**/*.vue": "eslint --ext .vue"
   },
   "browserslist": [
     "> 1%",
