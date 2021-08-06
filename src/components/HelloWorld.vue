@@ -114,7 +114,7 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String,
-    age:11,``1122
+    age:11
   },
 };
 </script>
@@ -125,7 +125,7 @@ h3 {
   margin: 40px 0 0;
 }
 ul {
-  list-style-type: none;
+  list-style-type: none；
   padding: 0;
 }
 li {
