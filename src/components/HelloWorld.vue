@@ -114,7 +114,6 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String,
-    age:11
   },
 };
 </script>
@@ -123,10 +122,6 @@ export default {
 <style scoped>
 h3 {
   margin: 40px 0 0;
-}
-ul {
-  list-style-type: none；；
-  padding: 0;
 }
 li {
   display: inline-block;
