@@ -1,7 +1,7 @@
 'use strict'
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
-
+const { PUBLIC_URL = '//awp-assets.sankuai.com/taojingbo02/vue3-vite/' } = process.env;
 const path = require('path')
 
 module.exports = {
@@ -38,12 +38,12 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../build/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../build'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: PUBLIC_URL,
 
     /**
      * Source Maps
@@ -56,7 +56,7 @@ module.exports = {
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
     // Before setting to `true`, make sure to:
-    // npm install --save-dev compression-webpack-plugin
+    // npm install --save-dev compression-webpack-plugin`
     productionGzip: false,
     productionGzipExtensions: ['js', 'css'],
 
